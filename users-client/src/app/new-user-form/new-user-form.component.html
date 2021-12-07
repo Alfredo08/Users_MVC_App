@@ -1,0 +1,36 @@
+<form (submit) = "createNewUser( $event )">
+    <div>
+        <label for="firstName">
+            First Name:
+        </label>
+        <input type="text" id="firstName" name="firstName" [(ngModel)] = "newUser.firstName">
+    </div>
+    <div>
+        <label for="lastName">
+            Last Name:
+        </label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)] = "newUser.lastName">
+    </div>
+    <div>
+        <label for="userName">
+            User Name:
+        </label>
+        <input type="text" id="userName" name="userName" [(ngModel)] = "newUser.userName">
+    </div>
+    <div>
+        <label for="password">
+            Password:
+        </label>
+        <input type="password" id="password" name="password" [(ngModel)] = "newUser.password">
+    </div>
+    <button type="submit">
+        Add user
+    </button>
+</form>
+
+<h2>
+    New user
+</h2>
+<div>
+    {{newUser.firstName}} {{newUser.lastName}} {{newUser.userName}} {{newUser.password}}
+</div>

@@ -1,0 +1,11 @@
+<button [routerLink]="['/addUser']">
+    Add new user
+</button>
+<button (click)="logout()">
+    Logout
+</button>
+<div *ngFor = "let user of allUsers" class="userCard">
+    <app-user [firstName] = "user.firstName" 
+              [lastName] = "user.lastName"
+              [userName] = "user.userName"></app-user>
+</div>

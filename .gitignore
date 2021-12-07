@@ -1,0 +1,10 @@
+/node_modules
+package-lock.json
+/users-client/node_modules
+/users-client/package-lock.json
+.DS_Store
+.idea
+.vagrant
+bootstrap.sh
+VagrantFile
+bower_components/

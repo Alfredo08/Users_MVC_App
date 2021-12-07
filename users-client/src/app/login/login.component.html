@@ -1,0 +1,55 @@
+<h2>
+    Login 
+</h2>
+<form (submit)="loginHandler( $event )">
+    <div>
+        <label for="loginUserName">
+            Username:
+        </label>
+        <input type="text" name="loginUserName" id="loginUserName" [(ngModel)]="loginUserName"/>
+    </div>
+    <div>
+        <label for="loginPassword">
+            Password:
+        </label>
+        <input type="password" name="loginPassword" id="loginPassword" [(ngModel)]="loginPassword"/>
+    </div>
+    <button type="submit">
+        Login
+    </button>
+    <div>
+        {{errorMessage}}
+    </div>
+</form>
+<h2>
+    Register 
+</h2>
+<form (submit)="registerHandler( $event )">
+    <div>
+        <label for="registerFirstName">
+            First Name:
+        </label>
+        <input type="text" name="registerFirstName" id="registerFirstName" [(ngModel)]="registerFirstName"/>
+    </div>
+    <div>
+        <label for="registerLastName">
+            Last Name:
+        </label>
+        <input type="text" name="registerLastName" id="registerLastName" [(ngModel)]="registerLastName"/>
+    </div>
+    <div>
+        <label for="registerUserName">
+            User Name:
+        </label>
+        <input type="text" name="registerUserName" id="registerUserName" [(ngModel)]="registerUserName"/>
+    </div>
+    <div>
+        <label for="registerPassword">
+            Password:
+        </label>
+        <input type="password" name="registerPassword" id="registerPassword" [(ngModel)]="registerPassword"/>
+    </div>
+    <button type="submit">
+        Register
+    </button>
+</form>

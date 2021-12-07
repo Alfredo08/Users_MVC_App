@@ -1,0 +1,13 @@
+<h2>
+    {{greeting}} User List
+</h2>
+<button (click) = "getUsers()">
+    Click to load users
+</button>
+<div *ngFor = "let user of allUsers" class="userCard">
+    <app-user [firstName] = "user.firstName" 
+              [lastName] = "user.lastName"
+              [userName] = "user.userName"></app-user>
+</div>
+<!--<app-new-user-form [postUser] = "postUser" [allUsers] = "allUsers"></app-new-user-form> -->
+
